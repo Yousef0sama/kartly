@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartly</title>
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Main Css file -->
+    <link rel="stylesheet " href="./css/main.css" />
+  </head>
+  <body>
+
+    <!-- header -->
+    <header
+      w3-include-html="/pages/header.html"
+      class="v-center between bg-primary"
+    ></header>
+
+    <!-- hero section -->
+    <section class="hero center" id="home">
+      <div class="hero-content center">
+        <h1 class="primary-text">Welcome to Kartly</h1>
+        <p>
+          We're more than just an online shop - we're passionate about bringing
+          you the best products with exceptional service.
+        </p>
+        <a href="/pages/products.html" class="btn rounded">Shop Now</a>
+      </div>
+      <div class="center">
+        <video autoplay loop muted plays-inline class="rounded">
+          <source src="./assets/videos/about.mp4" type="video/mp4" />
+          <!-- Fallback if browser doesn't support video -->
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about-section" id="about">
+      <div class="out-story">
+        <h2>Our Story</h2>
+        <p>
+          Founded in 2020, we began with a simple mission: to make online
+          shopping effortless and enjoyable. Today, we serve thousands of happy
+          customers worldwide with our curated selection of high-quality
+          products.
+        </p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-star primary-text"></i>
+          <h3>Quality Products</h3>
+          <p>Carefully selected from trusted suppliers</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-shipping-fast primary-text"></i>
+          <h3>Fast Shipping</h3>
+          <p>Delivery in 24-48 hours</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-headset primary-text"></i>
+          <h3>24/7 Support</h3>
+          <p>Dedicated customer service team</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- why us section -->
+    <section class="why-us center">
+      <h2>Why Choose Us?</h2>
+      <div class="reasons-list center">
+        <ul>
+          <li>30-day money back guarantee</li>
+          <li>10,000+ satisfied customers</li>
+          <li>Secure payment options</li>
+          <li>Exclusive member discounts</li>
+          <li>Eco-friendly packaging</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- stats section -->
+    <section class="stats center colored-text">
+      <div>
+        <span class="number">10,000+</span>
+        <span>Happy Customers</span>
+      </div>
+      <div>
+        <span class="number">500+</span>
+        <span>Quality Products</span>
+      </div>
+      <div>
+        <span class="number">24/7</span>
+        <span>Customer Support</span>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer  w3-include-html="/pages/footer.html" class="footer bg-primary center"></footer>
+
+  </body>
+
+  <script type="module" src="./js/core.js"></script>
+
+</html>

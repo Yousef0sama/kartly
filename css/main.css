@@ -1,0 +1,29 @@
+/* import global files */
+@import './global/reset.css';
+@import './global/variables.css';
+@import './global/base.css';
+@import './global/animation.css';
+@import './global/header.css';
+@import './global/footer.css';
+
+/* import home and about files */
+@import './home/hero.css';
+@import './home/about.css';
+@import './home/whyUs.css';
+@import './home/stats.css';
+
+/* import products files */
+@import './products/filtering.css';
+@import './products/products.css';
+@import './products/pagination.css';
+
+/* import product files */
+@import './product/product.css';
+@import './product/gallery.css';
+@import './product/details.css';
+
+/* import register files */
+@import './register/register.css';
+
+/* import login files */
+@import './login/login.css';

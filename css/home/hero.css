@@ -1,0 +1,39 @@
+
+.hero {
+  height: 90vh;
+  color: white;
+  background-color: var(--text-color);
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.hero div {
+  width: 50%;
+}
+
+.hero video {
+  width: 100%;
+  min-width: 350px;
+}
+
+.hero .hero-content {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hero .hero-content > * {
+  margin: 5px 0;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero div {
+    width: 100%;
+  }
+}

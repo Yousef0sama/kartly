@@ -1,0 +1,36 @@
+
+.product-container {
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.suggested-products{
+  padding: 30px;
+}
+
+/* responsive */
+
+
+
+@media screen and (max-width: 1200px) {
+  .suggested-products .product-card {
+    width: 48% !important;
+  }
+}
+
+/* taplets */
+
+@media screen and (max-width: 768px) {
+  .product-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* phones */
+
+@media screen and (max-width: 550px) {
+  .suggested-products .product-card {
+    width: 100% !important;
+  }
+}

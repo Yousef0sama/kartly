@@ -1,0 +1,129 @@
+/* Main container styling */
+.container {
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.login-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+  align-items: stretch;
+  width: 60%;
+  overflow: hidden;
+}
+
+/* Left blue side */
+.blue-side {
+  width: 50%;
+}
+
+.blue-side h1 {
+  color: white !important;
+  text-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Right white side */
+.white-side {
+  width: 100%;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.icon {
+  text-align: center;
+}
+
+/* Custom checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  content: '✓';
+  color: white;
+  font-size: 14px;
+  right: 5px;
+  top: -2px;
+  position: absolute;
+}
+
+.custom-toggle {
+  font-size: 14px;
+}
+
+/* forrget password */
+
+.forgot-password {
+  text-align: right;
+}
+
+/* Paragraph and links */
+
+.login-container p {
+  text-align: center;
+}
+
+.login-container a {
+  color: var(--primary-color);
+}
+
+/* icon */
+.icon i {
+  font-size: 35px;
+  color: var(--primary-color);
+}
+
+/* resposive */
+
+/* taplets */
+
+@media screen and (max-width: 1024px) {
+  .login-container {
+    width: 70%;
+  }
+
+  .login-container .form-row {
+    flex-direction: column;
+  }
+
+  .forgot-password {
+    text-align: left;
+  }
+
+}
+
+/* phones */
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .blue-side {
+    width: 100%;
+    height: 200px;
+  }
+
+}

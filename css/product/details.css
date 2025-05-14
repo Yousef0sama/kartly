@@ -1,0 +1,37 @@
+.product-container .info, .product-container .details {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+}
+
+.product-container .info .discount-badge {
+  display: none;
+}
+
+.product-container .info .price, .product-container .details span {
+  font-size: 18px;
+}
+
+.product-container .info .price sub {
+  font-weight: lighter;
+  opacity: 0.3;
+}
+
+.product-container .add-to-cart {
+  padding: 10px 20px;
+  max-width: 350px;
+}
+
+.product-container .add-to-cart > div {
+  background-color: white;
+  width: 150px;
+  padding: 10px 20px;
+}
+
+.product-container .add-to-cart div button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}

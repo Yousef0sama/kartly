@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- title -->
+    <title>Kartly</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header w3-include-html="./header.html" class="v-center between bg-primary"></header>
+
+    <!-- produts -->
+    <section id="products">
+      <!-- filtering -->
+      <div class="filtering between">
+        <!-- search -->
+        <div class="search center">
+          <input type="text" placeholder="Search..." class="search-input" />
+          <button class="search-button btn center"><i class='bx bx-search'></i></button>
+        </div>
+        <!-- filter by category -->
+        <div class="custom-select-wrapper">
+          <div class="custom-select-trigger pointer">select category</div>
+          <i class='bx bx-chevron-down arrow pointer custom-select-icon'w></i>
+          <div class="custom-options">
+              <span class="custom-option pointer" data-value="all">select category</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- products container -->
+      <div class="products-container h-center">
+      </div>
+      <!-- pagination -->
+      <div class="pagination center">
+        <button class="prev-btn btn rounded">Previous</button>
+        <div class="page-numbers center rounded"></div>
+        <button class="next-btn btn rounded">Next</button>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer w3-include-html="./footer.html" class="footer center bg-primary"></footer>
+
+    <script type="module" src="../js/core.js"></script>
+    <script type="module" src="../js/products.js"></script>
+
+  </body>
+</html>

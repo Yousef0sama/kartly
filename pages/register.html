@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- title -->
+    <title>Registration</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header w3-include-html="./header.html" class="v-center between bg-primary"></header>
+    <div class="center container">
+      <div class="registration-container rounded h-center">
+        <div class="registration-left bg-primary center">
+          <h1>Sign up</h1>
+        </div>
+        <div class="registration-right center">
+          <!-- form -->
+          <form method="post" action="#">
+            <!-- name -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First name</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Jhon"
+                  class="rounded"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Doe"
+                  class="rounded"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@example.com"
+                  class="rounded"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="rounded"
+                />
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Re-enter Password</label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  class="rounded"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="rounded"
+                  value="+20"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Egypt Cairo Masr EL-gedida"
+                  class="rounded"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <button type="button" class="submit btn rounded">Register</button>
+              </div>
+            </div>
+            <div class="sign-in">
+              <p>
+                You have account?
+                <a href="/pages/login.html" target="_self" rel="account">Sign in</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer w3-include-html="./footer.html" class="footer center bg-primary"></footer>
+
+    <script type="module" src="../js/core.js"></script>
+    <script type="module" src="../js/register.js"></script>
+  </body>
+</html>

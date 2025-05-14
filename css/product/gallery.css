@@ -1,0 +1,56 @@
+.product-container .gallery {
+  max-width: 400px;
+  min-width: 350px;
+}
+
+.product-container .gallery .main-image {
+  min-height: 350px;
+  max-height: 400px;
+}
+
+.product-container .gallery .images{
+  margin-top: 10px;
+  gap: 5px;
+  min-height: calc(400px / 6);
+}
+
+.product-container .gallery .images img, .product-container .gallery .images .image-container {
+  cursor: pointer;
+  max-width: 100px;
+}
+
+.product-container .gallery .images img:hover {
+  scale: 1.2;
+}
+
+.product-container .gallery .image-container {
+  position: relative;
+  width: 100%;
+  min-height: inherit;
+  overflow: hidden;
+}
+
+.product-container .gallery  .image-container .skeleton {
+  position: absolute;
+  inset: 0;
+  background: #e0e0e0;
+  animation: pulse 1.5s infinite;
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+.product-container .gallery .image-container img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.product-container .gallery .image-container img.loaded {
+  opacity: 1;
+}

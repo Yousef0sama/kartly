@@ -1,0 +1,28 @@
+
+.about-section {
+  background-color: white;
+  text-align: center;
+}
+
+.about-section > div {
+  padding: 60px 0;
+}
+
+.out-story {
+  padding: 60px !important;
+}
+
+.about-section h2 {
+  font-size: 32px;
+}
+
+.features {
+  background-color: var(--light-color);
+}
+
+@media screen and (max-width: 768px) {
+  .out-story {
+    padding: 60px 10px !important;
+  }
+}
+

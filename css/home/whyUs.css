@@ -1,0 +1,27 @@
+.why-us {
+  background-color: white;
+  flex-direction: column;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.why-us h2 {
+  font-size: 32px;
+}
+
+.why-us .reasons-list{
+  width: 100%;
+  flex-direction: column;
+}
+
+.why-us .reasons-list li {
+  padding: 10px 20px;
+}
+
+.why-us .reasons-list li::before {
+  content: '';
+  display: inline-block;
+  border: 10px solid transparent;
+  border-left: var(--primary-color) 10px solid;
+  margin-bottom: -5px;
+}

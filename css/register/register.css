@@ -1,0 +1,80 @@
+
+.container {
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.registration-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+  align-items: stretch;
+  width: 85%;
+  overflow: hidden;
+}
+
+.registration-left {
+  width: 50%;
+}
+
+.registration-left h1 {
+  color: white !important;
+  text-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 3rem;
+}
+
+.registration-right {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.submit{
+  font-size: large;
+}
+
+.submit:hover {
+  scale: 1.02;
+}
+
+
+.sign-in{
+  display: flex;
+  justify-content:center;
+  justify-items: center;
+  text-align: center;
+  font-size: large;
+}
+
+.registration-container a {
+  color:  var(--primary-color);
+}
+
+@media screen and (max-width: 1024px) {
+
+  .registration-left {
+    width: 40%;
+  }
+
+  .registration-left h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .registration-container {
+    flex-direction: column ;
+  }
+
+  .registration-left {
+    width: 100%;
+    height: 200px;
+  }
+
+  .registration-left h1 {
+    font-size: 3rem;
+  }
+
+  .registration-right {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,24 @@
+
+/* pagination */
+
+.pagination {
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button:disabled:hover {
+  background-color: #ccc;
+  box-shadow: none;
+  scale: 1;
+}
+
+.pagination .page-numbers {
+  background-color: rgba(0,0,0,0.1);
+  color: var(--primary-color);
+  padding: 5px 10px;
+}

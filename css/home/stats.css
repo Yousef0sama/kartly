@@ -1,0 +1,13 @@
+.stats {
+  background-color: var(--light-color);
+  padding: 40px 0;
+  flex-direction: column;
+}
+
+.stats > div {
+  padding: 10px 0;
+}
+
+.number {
+  color: var(--primary-color);
+}

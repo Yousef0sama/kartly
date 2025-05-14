@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Link to Boxicons library for icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- title -->
+    <title>Kartly</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header w3-include-html="./header.html" class="v-center between bg-primary"></header>
+
+    <!-- container -->
+    <div class="container center">
+      <div class="login-container rounded h-center">
+
+        <!-- Left blue side -->
+        <div class="blue-side bg-primary center">
+          <div class="logo-wrapper">
+            <h1><i class="bx bx-log-in-circle"></i> Login</h1>
+          </div>
+        </div>
+
+        <!-- Right white side -->
+        <div class="white-side h-center">
+
+          <div class="icon">
+            <i class="bx bx-user-circle"></i>
+          </div>
+
+          <!-- Login form -->
+          <form id="loginForm">
+
+            <!-- Email input field -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" class="rounded"/>
+              </div>
+            </div>
+
+            <!-- Password input field -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="Lpassword" name="password" class="rounded"/>
+              </div>
+            </div>
+
+            <!-- Remember me checkbox and forgot password link -->
+            <div class="form-row">
+              <div class="form-group">
+                <div class="v-center">
+                  <input type="checkbox" id="rememberMe" />
+                  <label for="rememberMe" class="custom-checkbox"></label>
+                  <label for="rememberMe" class="custom-toggle">Remember me</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <a href="#" class="forgot-password">Forgot password?</a>
+              </div>
+            </div>
+
+            <!-- Submit button to sign in -->
+            <div class="form-row">
+              <div class="form-group">
+                <button id="submit" type="button" class="rounded btn">Sign In</button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Link to sign up page if the user doesn't have an account -->
+          <p>
+            Don't 
+            have an 
+            account? <a href="/pages/register.html" class="s">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer w3-include-html="./footer.html" class="footer center bg-primary"></footer>
+
+    <script type="module" src="../js/core.js"></script>
+    <script type="module" src="../js/login.js"></script>
+  </body>
+</html>

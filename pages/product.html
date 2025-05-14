@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <!-- css -->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Kartly</title>
+</head>
+<body>
+
+  <!-- header -->
+  <header w3-include-html="./header.html" class="v-center between bg-primary"></header>
+
+  <!-- Product container -->
+  <section class="product-container h-center">
+    <div class="gallery">
+    </div>
+    <div>
+      <div class="info">
+        <h1 class="title"></h1>
+      </div>
+      <div class="details">
+        <p class="colored-text">brand: <span id="brand"></span> </p>
+        <p id="description"><span class="colored-text">details : </span> <span id="data"></span></p>
+      </div>
+      <div class="add-to-cart v-center between">
+        <div class="v-center between rounded">
+          <button id="minus" class="center primary-text"><i class='bx bx-minus'></i></button>
+          <span id="count" class="primary-text">0</span>
+          <button id="plus" class="center primary-text"><i class='bx bx-plus'></i></button>
+        </div>
+        <button class="btn rounded">Add to cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- sugetted products -->
+
+  <section class="suggested-products">
+    <h2>suggested products</h2>
+    <div class="products-container h-center"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer w3-include-html="./footer.html" class="footer center bg-primary"></footer>
+
+  <script type="module" src="../js/core.js"></script>
+  <script type="module" src="../js/product.js"></script>
+
+</body>
+</html>
