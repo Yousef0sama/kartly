@@ -13,10 +13,20 @@
   <body>
 
     <!-- header -->
-    <header
-      w3-include-html="/pages/header.html"
-      class="v-center between bg-primary"
-    ></header>
+    <header class="v-center between bg-primary">
+      <div class="logo v-center pointer">
+        <i class='bx bx-cart'></i>
+        <span>Kartly</span>
+      </div>
+      <nav>
+        <ul class="around">
+          <li><a class="btn rounded" href="/index.html">Home</a></li>
+          <li><a class="btn rounded" href="/index.html#about">About</a></li>
+          <li><a class="btn rounded" href="/pages/products.html">products</a></li>
+          <li><a id="log" class="btn rounded" href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- hero section -->
     <section class="hero center" id="home">
@@ -98,7 +108,14 @@
     </section>
 
     <!-- footer -->
-    <footer  w3-include-html="/pages/footer.html" class="footer bg-primary center"></footer>
+    <footer class="footer bg-primary center">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>© 2025 Kartly. All Rights Reserved.</p>
+    </footer>
 
   </body>
 

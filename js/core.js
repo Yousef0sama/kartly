@@ -2,21 +2,8 @@
 
 // utils
 import { deleteCookie, getCookie } from "./utils/cookies.js";
-import includeHTML from "./utils/includeHTML.js";
-
-// constants
-import { isProtectedPages } from "./utils/consts.js";
 
 window.addEventListener('DOMContentLoaded', async () => {
-
-  if (isProtectedPages) {
-    history.back();
-    setTimeout(function() {
-      window.location.href = '/';
-    }, 1000);
-  }
-
-  includeHTML();
 
   window.addEventListener("load", () => {
     setTimeout(() => {

@@ -13,7 +13,20 @@
 <body>
 
   <!-- header -->
-  <header w3-include-html="./header.html" class="v-center between bg-primary"></header>
+  <header class="v-center between bg-primary">
+    <div class="logo v-center pointer">
+      <i class='bx bx-cart'></i>
+      <span>Kartly</span>
+    </div>
+    <nav>
+      <ul class="around">
+        <li><a class="btn rounded" href="/index.html">Home</a></li>
+        <li><a class="btn rounded" href="/index.html#about">About</a></li>
+        <li><a class="btn rounded" href="/pages/products.html">products</a></li>
+        <li><a id="log" class="btn rounded" href="#"></a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Product container -->
   <section class="product-container h-center">
@@ -46,7 +59,14 @@
   </section>
 
   <!-- Footer -->
-  <footer w3-include-html="./footer.html" class="footer center bg-primary"></footer>
+  <footer class="footer center bg-primary">
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>© 2025 Kartly. All Rights Reserved.</p>
+  </footer>
 
   <script type="module" src="../js/core.js"></script>
   <script type="module" src="../js/product.js"></script>

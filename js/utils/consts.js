@@ -17,6 +17,4 @@ if (window.innerWidth < 768) {
   itemsPerPage = items.mobile;
 }
 
-const isProtectedPages = window.location.pathname.endsWith('/header.html') || window.location.pathname.endsWith('/footer.html');
-
-export { itemsPerPage, isProtectedPages };
+export { itemsPerPage };
