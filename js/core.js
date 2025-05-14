@@ -14,13 +14,13 @@ window.addEventListener('DOMContentLoaded', async () => {
         log.setAttribute('href', '#');
       } else {
         log.textContent = 'log in';
-        log.setAttribute('href', '/pages/login.html');
+        log.setAttribute('href', '/kartly/pages/login.html');
       }
 
       log.addEventListener('click', () => {
         if (log.textContent === 'log out') {
           deleteCookie('user');
-          log.setAttribute('href', '/pages/login.html');
+          log.setAttribute('href', '/kartly/pages/login.html');
           log.textContent = 'log in';
         }
       })

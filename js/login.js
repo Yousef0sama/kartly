@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           if (rememberMe.checked) {
             setCookie('user', user.id, 30);
-            location.href = '/'
+            location.href = '/kartly/'
           }
         }
       }

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // if theren't id redirect user to products page
   if (!id) {
-    window.location.href = "/pages/products.html";
+    window.location.href = "/kartly/pages/products.html";
     return;
   }
 

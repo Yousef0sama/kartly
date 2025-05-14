@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         password: password.value,
       });
 
-      window.location.href = '/';
+      window.location.href = '/kartly/';
     }
   });
 });

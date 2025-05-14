@@ -27,7 +27,7 @@ export default function renderProducts(products, currentPage) {
     // create product card
     const productCard = document.createElement('a');
     productCard.classList.add('product-card', 'card', 'rounded');
-    productCard.setAttribute('href', '/pages/product.html?id=' + product.id);
+    productCard.setAttribute('href', '/kartly/pages/product.html?id=' + product.id);
 
     const productImage = createProductImage(product.thumbnail, product.title);
     const productTitle = createProductTitle(product.title);
